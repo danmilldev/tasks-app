@@ -104,3 +104,9 @@
     text-decoration-thickness: 2px;
     opacity: 50%;
 }
+
+@media screen and (max-width: 750px) {
+    .task-list {
+        width: max-content;
+    }
+}
