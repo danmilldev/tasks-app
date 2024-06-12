@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="task-card">
+        <h1 class="card-title">Tasks</h1>
+        <div class="task-buttons">
+            <input type="text" placeholder="Task Name" id="task-name-input" class="task-name-input">
+            <button type="button" class="task-create" id="create-button">Create Task</button>
+            <p id="info-text"></p>
+        </div>
+        <hr class="section-line">
+        <ul id="task-list" class="task-list">
+            <li class="task-item">
+            </li>
+            <li class="task-item">
+                <p class="task-name">First task</p>
+                <div class="task-buttons">
+                    <button class="task-edit" onclick="editTask(this)">Edit</button>
+                    <button class="task-delete" onclick="deleteTask(this)">Delete</button>
+                </div>
+            </li>
+            <li class="task-item">
+                <p class="task-name">Second task</p>
+                <div class="task-buttons">
+                    <button class="task-edit" onclick="editTask(this)">Edit</button>
+                    <button class="task-delete" onclick="deleteTask(this)">Delete</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="tasks.js"></script>
+</body>
+</html>

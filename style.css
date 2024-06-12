@@ -1,0 +1,106 @@
+* {
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ebe9dc;
+}
+
+.card-title {
+    margin-bottom: 5vh;
+}
+
+.task-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 15vh 10vw;
+    padding: 5rem;
+    height: 70vh;
+}
+
+.task-name-input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.2rem 0;
+}
+
+.section-line {
+    width: 50vw;
+    margin: 3rem 0 2rem 0;
+}
+
+.task-list {
+    overflow-y: hidden;
+    height: 50vh;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1rem 1rem;
+}
+
+.task-item {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+    line-height: 2rem;
+    min-width: 25vw;
+}
+
+.task-name {
+    padding-right: 3rem;
+}
+
+.task-create {
+    padding: 0.2rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-create:hover {
+    background-color: black;
+    color: white;
+}
+
+.task-edit {
+    padding: 0.2rem 0.5rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-edit:hover {
+    background-color: yellow;
+    border: 1px solid yellow;
+    color: black;
+}
+
+.task-delete {
+    padding: 0.2rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-delete:hover {
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+}
+
+.strike-through {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    opacity: 50%;
+}
